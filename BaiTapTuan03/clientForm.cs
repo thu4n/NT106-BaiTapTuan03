@@ -30,7 +30,12 @@ namespace BaiTapTuan03
 
         private void startBtn_Click(object sender, EventArgs e)
         {
-
+            
+            clientChatForm chat = new clientChatForm(ipTextBox.Text, Int32.Parse(serverPortTB.Text), nameTextBox.Text);
+            chat.Show();
+            Close();
         }
+
+
     }
 }

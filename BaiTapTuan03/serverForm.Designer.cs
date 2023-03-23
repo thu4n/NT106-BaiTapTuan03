@@ -89,12 +89,14 @@ namespace BaiTapTuan03
             // 
             this.chatBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(35)))), ((int)(((byte)(41)))));
             this.chatBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.chatBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.chatBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chatBox.ForeColor = System.Drawing.SystemColors.Window;
             this.chatBox.Location = new System.Drawing.Point(125, 190);
             this.chatBox.Multiline = true;
             this.chatBox.Name = "chatBox";
             this.chatBox.Size = new System.Drawing.Size(550, 288);
             this.chatBox.TabIndex = 4;
+            this.chatBox.TextChanged += new System.EventHandler(this.chatBox_TextChanged);
             // 
             // serverPortTB
             // 

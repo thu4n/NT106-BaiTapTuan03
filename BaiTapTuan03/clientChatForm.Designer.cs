@@ -41,6 +41,8 @@ namespace BaiTapTuan03
             this.label1 = new System.Windows.Forms.Label();
             this.clientPortTB = new System.Windows.Forms.TextBox();
             this.clientPortLabel = new System.Windows.Forms.Label();
+            this.typeBox = new System.Windows.Forms.TextBox();
+            this.sendBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nameTextBox
@@ -107,16 +109,18 @@ namespace BaiTapTuan03
             this.discBtn.TabIndex = 13;
             this.discBtn.Text = "Disconnect";
             this.discBtn.UseVisualStyleBackColor = false;
+            this.discBtn.Click += new System.EventHandler(this.discBtn_Click);
             // 
             // chatBox
             // 
             this.chatBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(35)))), ((int)(((byte)(41)))));
             this.chatBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.chatBox.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.chatBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chatBox.ForeColor = System.Drawing.SystemColors.Window;
             this.chatBox.Location = new System.Drawing.Point(125, 202);
             this.chatBox.Multiline = true;
             this.chatBox.Name = "chatBox";
-            this.chatBox.Size = new System.Drawing.Size(550, 340);
+            this.chatBox.Size = new System.Drawing.Size(550, 278);
             this.chatBox.TabIndex = 14;
             // 
             // serverPortTB
@@ -159,12 +163,39 @@ namespace BaiTapTuan03
             this.clientPortLabel.TabIndex = 19;
             this.clientPortLabel.Text = "Your port number:";
             // 
+            // typeBox
+            // 
+            this.typeBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.typeBox.Location = new System.Drawing.Point(125, 486);
+            this.typeBox.Multiline = true;
+            this.typeBox.Name = "typeBox";
+            this.typeBox.Size = new System.Drawing.Size(454, 56);
+            this.typeBox.TabIndex = 21;
+            this.typeBox.TextChanged += new System.EventHandler(this.typeBox_TextChanged);
+            // 
+            // sendBtn
+            // 
+            this.sendBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(71)))), ((int)(((byte)(94)))));
+            this.sendBtn.FlatAppearance.BorderSize = 0;
+            this.sendBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sendBtn.Font = new System.Drawing.Font("Arial Black", 8.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sendBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(191)))), ((int)(((byte)(243)))));
+            this.sendBtn.Location = new System.Drawing.Point(585, 486);
+            this.sendBtn.Name = "sendBtn";
+            this.sendBtn.Size = new System.Drawing.Size(90, 56);
+            this.sendBtn.TabIndex = 22;
+            this.sendBtn.Text = "Send";
+            this.sendBtn.UseVisualStyleBackColor = false;
+            this.sendBtn.Click += new System.EventHandler(this.sendBtn_Click);
+            // 
             // clientChatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(40)))), ((int)(((byte)(57)))));
             this.ClientSize = new System.Drawing.Size(800, 566);
+            this.Controls.Add(this.sendBtn);
+            this.Controls.Add(this.typeBox);
             this.Controls.Add(this.clientPortTB);
             this.Controls.Add(this.clientPortLabel);
             this.Controls.Add(this.serverPortTB);
@@ -198,5 +229,7 @@ namespace BaiTapTuan03
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox clientPortTB;
         private System.Windows.Forms.Label clientPortLabel;
+        private System.Windows.Forms.TextBox typeBox;
+        private System.Windows.Forms.Button sendBtn;
     }
 }

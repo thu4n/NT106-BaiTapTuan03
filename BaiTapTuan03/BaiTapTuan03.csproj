@@ -72,7 +72,6 @@
     <Compile Include="serverForm.Designer.cs">
       <DependentUpon>serverForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ServerSide.cs" />
     <EmbeddedResource Include="clientChatForm.resx">
       <DependentUpon>clientChatForm.cs</DependentUpon>
     </EmbeddedResource>

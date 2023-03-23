@@ -39,8 +39,6 @@ namespace BaiTapTuan03
             this.startBtn = new System.Windows.Forms.Button();
             this.serverPortTB = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.clientPortTB = new System.Windows.Forms.TextBox();
-            this.clientPortLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -111,7 +109,7 @@ namespace BaiTapTuan03
             this.startBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startBtn.Font = new System.Drawing.Font("Arial Black", 8.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.startBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(191)))), ((int)(((byte)(243)))));
-            this.startBtn.Location = new System.Drawing.Point(267, 309);
+            this.startBtn.Location = new System.Drawing.Point(268, 267);
             this.startBtn.Name = "startBtn";
             this.startBtn.Size = new System.Drawing.Size(145, 36);
             this.startBtn.TabIndex = 9;
@@ -138,33 +136,12 @@ namespace BaiTapTuan03
             this.label1.TabIndex = 10;
             this.label1.Text = "Server port number:";
             // 
-            // clientPortTB
-            // 
-            this.clientPortTB.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clientPortTB.Location = new System.Drawing.Point(331, 262);
-            this.clientPortTB.Name = "clientPortTB";
-            this.clientPortTB.Size = new System.Drawing.Size(158, 27);
-            this.clientPortTB.TabIndex = 13;
-            // 
-            // clientPortLabel
-            // 
-            this.clientPortLabel.AutoSize = true;
-            this.clientPortLabel.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clientPortLabel.ForeColor = System.Drawing.Color.White;
-            this.clientPortLabel.Location = new System.Drawing.Point(178, 265);
-            this.clientPortLabel.Name = "clientPortLabel";
-            this.clientPortLabel.Size = new System.Drawing.Size(140, 19);
-            this.clientPortLabel.TabIndex = 12;
-            this.clientPortLabel.Text = "Your port number:";
-            // 
             // clientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(40)))), ((int)(((byte)(57)))));
-            this.ClientSize = new System.Drawing.Size(681, 380);
-            this.Controls.Add(this.clientPortTB);
-            this.Controls.Add(this.clientPortLabel);
+            this.ClientSize = new System.Drawing.Size(681, 339);
             this.Controls.Add(this.serverPortTB);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.startBtn);
@@ -194,7 +171,5 @@ namespace BaiTapTuan03
         private System.Windows.Forms.Button startBtn;
         private System.Windows.Forms.TextBox serverPortTB;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox clientPortTB;
-        private System.Windows.Forms.Label clientPortLabel;
     }
 }
